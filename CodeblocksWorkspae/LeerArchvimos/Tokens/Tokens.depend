@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1663792330 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/LeerArchvimos/Tokens/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<curses.h>
+

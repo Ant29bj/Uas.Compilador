@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663630881 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/LeerArchvimos/leerARrchivos/main.c
+	<stdio.h>
+	<stdlib.h>
+	<cstypes.h>
+
