@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1664140031 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	<ctype.h>
+	"modulos.h"
+	"automatas.h"
+
+1663896019 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
+
+1664055922 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulo.c
+	"modulos.h"
+	<stdlib.h>
+	<stdio.h>
+
+1664137712 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.c
+	"automatas.h"
+	"modulos.h"
+	<regex.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1664143996 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.h
+
