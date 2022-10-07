@@ -1,33 +1,53 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <strings.h>
-#include <ctype.h>
-#include "modulos.h"
+
 #include "automatas.h"
+#include "modulos.h"
+extern struct Nodo *raiz;
+
+char ArregloPalRes[][19] = {"ent",         "real",    "car",     "discreto",
+                            "tirarcodigo", "cuando",  "sino",    "paranga",
+                            "imprimir",    "nada",    "regresa", "importa",
+                            "nuevo",       "publico", "privado", "mientras",
+                            "bloque",      "clase",   "mientras"};
 
 FILE *sourcef;
-int main()
-{
-    char caracter;
-    sourcef = fopen("//home//sekai//Escritorio//programafuente//holamundo.txt","r");
-    if(sourcef == NULL){
-      printf("Archivo no encontrado\n");
-    }else {
-      printf("==========Contendio============\n");
-      caracter = fgetc(sourcef);
-      while (caracter != EOF) {
+char caracter;
+int fila = 1;
+int columna = 0;
+int main() {
 
-        if (isalpha(caracter)) {
-	  identificadores(caracter); 
-        }else if (isalnum(caracter)) {
-	  printf("automate de numeros\n");
-        }else if (isascii(caracter)) {
-	  printf("automata de caracteres\n");
-        }
-	caracter = fgetc(sourcef); 
+  sourcef =
+      fopen("//home//sekai//Escritorio//programafuente//holamundo.txt", "r");
+  if (sourcef == NULL) {
+    printf("Archivo no encontrado\n");
+
+  } else {
+    printf("==========Contenido============\n");
+    caracter = fgetc(sourcef);
+    while (caracter != EOF) {
+
+      if (caracter == '\n') {
+        printf("salto de linea \n");
+      } else if (isalpha(caracter)) {
+
+        identificadores(caracter);
+
+      } else if (isdigit(caracter) || caracter == '-' || caracter == '.') {
+
+        numeros(caracter);
+
+      } else if (isascii(caracter) && !isspace(caracter)) {
+
+        caracterEspecial(caracter);
       }
-
+      caracter = fgetc(sourcef);
     }
-
-    return 0;
+  }
+  printf("Tipo \t Nombre\t Lexema\t Columna\t Fila\n");
+  recorerNodo(raiz);
+  return 0;
 }

@@ -1,26 +1,31 @@
 # depslib dependency file v1.0
-1664140031 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
-	<stdio.h>
-	<stdlib.h>
-	<strings.h>
+1665114990 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
 	<ctype.h>
-	"modulos.h"
-	"automatas.h"
-
-1663896019 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
-
-1664055922 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulo.c
-	"modulos.h"
+	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"automatas.h"
+	"modulos.h"
+
+1665114995 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
 	<stdio.h>
 
-1664137712 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.c
+1665108886 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulo.c
+	"modulos.h"
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1665114902 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.c
 	"automatas.h"
 	"modulos.h"
+	<ctype.h>
 	<regex.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1664143996 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.h
+1664509266 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.h
 

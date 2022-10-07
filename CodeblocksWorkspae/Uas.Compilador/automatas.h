@@ -7,5 +7,9 @@ struct Automata;
 
 void identificadores(char caracter);
 
+void numeros(char caracter);
+
+void caracterEspecial(char caracter);
+
 
 #endif // AUTOMATAS_H_INCLUDED
