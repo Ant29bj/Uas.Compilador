@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1665114990 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
+1665444395 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -8,7 +8,7 @@
 	"automatas.h"
 	"modulos.h"
 
-1665114995 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
+1665444288 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
 	<stdio.h>
 
 1665108886 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulo.c
@@ -18,7 +18,7 @@
 	<stdlib.h>
 	<string.h>
 
-1665114902 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.c
+1665444347 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.c
 	"automatas.h"
 	"modulos.h"
 	<ctype.h>

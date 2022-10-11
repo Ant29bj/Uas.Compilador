@@ -13,7 +13,6 @@ char ArregloPalRes[][19] = {"ent",         "real",    "car",     "discreto",
                             "imprimir",    "nada",    "regresa", "importa",
                             "nuevo",       "publico", "privado", "mientras",
                             "bloque",      "clase",   "mientras"};
-
 FILE *sourcef;
 char caracter;
 int fila = 1;
@@ -31,7 +30,8 @@ int main() {
     while (caracter != EOF) {
 
       if (caracter == '\n') {
-        printf("salto de linea \n");
+        columna = 0;
+        fila++;
       } else if (isalpha(caracter)) {
 
         identificadores(caracter);
@@ -44,7 +44,7 @@ int main() {
 
         caracterEspecial(caracter);
       }
-      caracter = fgetc(sourcef);
+      caracter = fgetc_unlocked(sourcef);
     }
   }
   printf("Tipo \t Nombre\t Lexema\t Columna\t Fila\n");
