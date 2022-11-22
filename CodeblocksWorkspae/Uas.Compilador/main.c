@@ -8,11 +8,11 @@
 #include "modulos.h"
 extern struct Nodo *raiz;
 
-char ArregloPalRes[][19] = {"ent",         "real",    "car",     "discreto",
+char ArregloPalRes[][21] = {"ent",         "real",    "car",     "discreto",
                             "tirarcodigo", "cuando",  "sino",    "paranga",
                             "imprimir",    "nada",    "regresa", "importa",
                             "nuevo",       "publico", "privado", "mientras",
-                            "bloque",      "clase",   "mientras"};
+                            "bloque",      "clase",   "mientras", "si","sino"};
 FILE *sourcef;
 char caracter;
 int fila = 1;
@@ -28,7 +28,6 @@ int main() {
     printf("==========Contenido============\n");
     caracter = fgetc(sourcef);
     while (caracter != EOF) {
-
       if (caracter == '\n') {
         columna = 0;
         fila++;
@@ -44,7 +43,7 @@ int main() {
 
         caracterEspecial(caracter);
       }
-      caracter = fgetc_unlocked(sourcef);
+      caracter = fgetc(sourcef);
     }
   }
   printf("Tipo \t Nombre\t Lexema\t Columna\t Fila\n");

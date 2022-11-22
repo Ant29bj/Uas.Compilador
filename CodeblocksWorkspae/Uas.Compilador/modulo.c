@@ -14,6 +14,7 @@ struct Token {
   char lexema[80];
 };
 
+
 struct Nodo {
   struct Token info;
   struct Nodo *izq;
@@ -45,8 +46,8 @@ void insertarNodo(struct Token token) {
 
 void recorerNodo(struct Nodo *nodo) {
   if (nodo != NULL) {
-    printf("%d\t", nodo->info.tipo);
-    printf("%s\t\t", nodo->info.Nombre);
+    //printf("%d\t", nodo->info.tipo);
+    //printf("%s\t\t", nodo->info.Nombre);
     printf("%s\t", nodo->info.lexema);
     printf("%d\t", nodo->info.columna);
     printf("%d\t", nodo->info.fila);
@@ -91,9 +92,15 @@ void insertarNumero(char *string) {
 }
 
 void insertarCaracter(char *string) {
+  if (string[0] == '"') {
+    newToken.tipo = CAD;
+    newToken.Nombre = "CADENA";
+  } else {
+
+    newToken.Nombre = "SIMBOLO";
+    newToken.tipo = SIM;
+  }
   columna++;
-  newToken.tipo = SIM;
-  newToken.Nombre = "SIMBOLO";
   strcpy(newToken.lexema, string);
   newToken.columna = columna;
   newToken.fila = fila;

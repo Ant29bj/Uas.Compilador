@@ -6,7 +6,7 @@ extern FILE *sourcef;
 
 extern char caracter;
 
-extern char ArregloPalRes[][19];
+extern char ArregloPalRes[][21];
 
 extern int fila;
 
