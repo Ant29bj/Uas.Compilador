@@ -1,25 +1,9 @@
+#include "automata-sintactico.h"
 #include "modulos.h"
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-enum TipoToken { PALRES, ID, NUM, CAD, CAR, SIM };
-
-struct Token {
-  enum TipoToken tipo;
-  char *Nombre;
-  int fila;
-  int columna;
-  char lexema[80];
-};
-
-
-struct Nodo {
-  struct Token info;
-  struct Nodo *izq;
-  struct Nodo *der;
-};
 
 struct Nodo *raiz;
 struct Nodo *actual;
@@ -43,16 +27,10 @@ void insertarNodo(struct Token token) {
     actual = nuevo;
   }
 }
-
 void recorerNodo(struct Nodo *nodo) {
   if (nodo != NULL) {
-    //printf("%d\t", nodo->info.tipo);
-    //printf("%s\t\t", nodo->info.Nombre);
-    printf("%s\t", nodo->info.lexema);
-    printf("%d\t", nodo->info.columna);
-    printf("%d\t", nodo->info.fila);
-    printf("\n");
-    recorerNodo(nodo->der);
+    evalueToken(nodo);
+    recorerNodo(gnext);
   }
 }
 

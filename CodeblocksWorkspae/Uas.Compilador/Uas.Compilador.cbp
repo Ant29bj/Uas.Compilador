@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="automata-sintactico.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="automata-sintactico.h" />
 		<Unit filename="automatas.c">
 			<Option compilerVar="CC" />
 		</Unit>

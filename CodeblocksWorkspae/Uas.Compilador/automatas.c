@@ -42,7 +42,7 @@ void identificadores(char c) {
   }
 
   if (c == ';' || c == '(' || c == ')' || c == '{' || c == '}' || c == '[' ||
-      c == ']') {
+      c == ']' || c == ',') {
 
     caracterEspecial(c);
 
@@ -182,13 +182,13 @@ void caracterEspecial(char c) {
       }
       break;
     case 6:
-      if (c != '"' && c != '\n'){
+      if (c != '"' && c != '\n') {
         strncat(operadores, &c, 1);
         c = fgetc(sourcef);
       } else if (c == '"') {
-        strncat(operadores, &c, 1);  
+        strncat(operadores, &c, 1);
         estado = 7;
-      } else if(c == '\n'){
+      } else if (c == '\n') {
         printf("Error: missing element ");
         exit(1);
       }

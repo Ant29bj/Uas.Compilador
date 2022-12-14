@@ -12,9 +12,21 @@ extern int fila;
 
 extern int columna;
 
-struct Token;
+enum TipoToken { PALRES, ID, NUM, CAD, CAR, SIM };
 
-struct Nodo;
+struct Token {
+  enum TipoToken tipo;
+  char *Nombre;
+  int fila;
+  int columna;
+  char lexema[80];
+};
+
+struct Nodo {
+  struct Token info;
+  struct Nodo *izq;
+  struct Nodo *der;
+};
 
 void insertarNodo(struct Token token);
 

@@ -1,22 +1,23 @@
+#include "automatas.h"
+#include "modulos.h"
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <strings.h>
-
-#include "automatas.h"
-#include "modulos.h"
 extern struct Nodo *raiz;
 
-char ArregloPalRes[][21] = {"ent",         "real",    "car",     "discreto",
-                            "tirarcodigo", "cuando",  "sino",    "paranga",
-                            "imprimir",    "nada",    "regresa", "importa",
-                            "nuevo",       "publico", "privado", "mientras",
-                            "bloque",      "clase",   "mientras", "si","sino"};
+char ArregloPalRes[][21] = {
+    "ent",      "real",    "car",      "discreto", "tirarcodigo", "cuando",
+    "sino",     "paranga", "imprimir", "nada",     "regresa",     "importa",
+    "nuevo",    "publico", "privado",  "mientras", "bloque",      "clase",
+    "mientras", "si",      "sino"};
 FILE *sourcef;
 char caracter;
 int fila = 1;
 int columna = 0;
+
+struct Token comodin;
 int main() {
 
   sourcef =
@@ -46,7 +47,15 @@ int main() {
       caracter = fgetc(sourcef);
     }
   }
-  printf("Tipo \t Nombre\t Lexema\t Columna\t Fila\n");
+  
+  comodin.tipo = NUM;
+  comodin.Nombre = "NUMERO";
+  strcpy(comodin.lexema, "Comodin");
+  comodin.columna = columna;
+  comodin.fila = fila;
+  insertarNodo(comodin);
+
   recorerNodo(raiz);
+  printf("Exito");
   return 0;
 }
