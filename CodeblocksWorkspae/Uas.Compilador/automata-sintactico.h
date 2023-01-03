@@ -9,6 +9,8 @@ struct Nodo *empty;
 
 int verificarExpression(struct Nodo *nodo, int estado);
 
+void buscarLlave(struct Nodo *nodo);
+
 int funcParametros(struct Nodo *nodo, int estado);
 
 void verificarFuncion(struct Nodo *nodo, int estado);
@@ -21,6 +23,8 @@ void declareVariable(struct Nodo *nodo, int estadoDeclararVariable);
 
 void indentificadores(struct Nodo *nodo, int estado);
 
-void autoIf(struct Nodo *nodo);
+void autoIf(struct Nodo *nodo, int estado);
+
+void excepcion(struct Nodo *nodo);
 
 #endif

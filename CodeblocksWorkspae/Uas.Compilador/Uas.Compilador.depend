@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1671002223 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
+1671085791 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/main.c
 	"automatas.h"
 	"modulos.h"
 	<ctype.h>
@@ -8,10 +8,10 @@
 	<string.h>
 	<strings.h>
 
-1670982054 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
+1671085895 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulos.h
 	<stdio.h>
 
-1671002087 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulo.c
+1671004741 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/modulo.c
 	"automata-sintactico.h"
 	"modulos.h"
 	<ctype.h>
@@ -30,10 +30,10 @@
 
 1664509266 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automatas.h
 
-1670997703 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automata-sintactico.h
+1671085388 /home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automata-sintactico.h
 	"modulos.h"
 
-1671002505 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automata-sintactico.c
+1671094419 source:/home/sekai/Univesidad/Semestre/7/Compiladores/CodeblocksWorkspae/Uas.Compilador/automata-sintactico.c
 	"automata-sintactico.h"
 	"modulos.h"
 	<stdbool.h>

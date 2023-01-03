@@ -47,7 +47,7 @@ int main() {
       caracter = fgetc(sourcef);
     }
   }
-  
+
   comodin.tipo = NUM;
   comodin.Nombre = "NUMERO";
   strcpy(comodin.lexema, "Comodin");
